@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" aria-current="page" href="index.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>الرئيسية</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ourProjects">
+                            <ion-icon name="business-outline"></ion-icon>
+                            <span>مشاريعنا</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ContactUS">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <span>تواصل معنا</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <div>
+                <h1 class="text-center">
+                    شركة قمة السلامة
+                </h1>
+                <p class="text-center">خبراء في حلول السلامة المرورية المتكاملة، من دهانات الطرق وتركيب عيون القطط إلى اللوحات الإرشادية وأعمال الأسفلت</p>
+                <button onclick="window.location.href = '#company'" class="btn btn-primary" id="butonMore">اقرأ المزيد</button>            
+            </div>
+        </header>
+
+        <div class="container">
+            <div id="company">
+                <div id="who">
+                
+                    <img src="assets//images/logo.png" id="img-top" alt="Logo">
+                    <div class="content">
+                        <h1>شركة قمة السلامة :</h1>
+                        <ul>
+                            <li>تُعَدُّ واحدة من الشركات الرائدة في مجال أعمال السلامة المرورية .</li>
+                            <li>حيث تقدم خدمات متكاملة لضمان سلامة الطرق و تحسين بنيتها التحتية وفق أعلى معايير الجودة</li>
+                            <li>تشمل خدمات الشركة: دهانات الطرق، تركيب عيون القطط، اللوحات الإرشادية والتحذيرية، دهانات الأرصفة وخطوط التهدئة، وسائل السلامة المرورية، وأعمال الأسفلت</li>
+                            <li>تعمل الشركة مع مجموعة من كبرى شركات المقاولات والمؤسسات في المملكة العربية السعودية، مثل:  شركة الاجتياز للمقاولات، شركة الفجر للمقاولات، شركة مطلق الغويري للمقاولات،
+                                شركة وهك للمقاولات، شركة وخم للمقاولات، شركة </li>
+                            
+                        </ul>
+                        
+                    </div>
+                    <img src="assets//images/logo.png" id="img-left" alt="Logo">
+                </div>
+            </div>
+
+            <hr>
+            <div id="ourProjects">
+                <h2 class="text-center" style="color:#C8A830;">المشاريع</h2>
+                <p class="text-center" style="color:#333333bd;">أبرز مشاريعنا المتميزة التي تعكس التزامنا بالجودة والسلامة في تطوير البنية التحتية للطرق</p>
+                <div class="slider">
+                    <button id="prev-slide" class="slide-button material-icons">chevron_right</button>
+                    <div class="image-list" id="images"></div>
+                    <button id="next-slide" class="slide-button material-icons">chevron_left</button>
+                </div>
+                
+            </div>  
+            <hr>          
+        </div>
+
+        <div class="modal" id="imageModal">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <img id="modalImage" src="" alt="Modal Image">
+        </div>
+
+        <footer id="ContactUS" style="background-color: #000000d9; color: #fff; text-align: center; padding: 20px 0;">
+        <!-- Social Media Icons -->
+        <div style="margin-bottom: 20px; text-align:center;">
+          <a href="https://www.facebook.com/" target="_blank" style="margin: 0 10px; color: #fff; text-decoration: none; font-size: 20px;">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank"  style="margin: 0 10px; color: #fff; text-decoration: none; font-size: 20px;">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://x.com/?lang=ar" target="_blank"  style="margin: 0 10px; color: #fff; text-decoration: none; font-size: 20px;">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank"  style="margin: 0 10px; color: #fff; text-decoration: none; font-size: 20px;">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      
+        <!-- Navigation Links -->
+        <div style="margin-bottom: 20px; direction:ltr; text-align:center;">
+            <p href="" style="margin: 0 10px; color: #fff; text-decoration: none; font-size: 20px; direction:ltr; text-align:center;">
+                <i class="fas fa-phone"></i> 00966558720046  \  00966553276477
+               
+            </p>
+          
+        </div>
+      
+        <!-- Copyright Text -->
+        <div style="font-size: 14px; color: #aaa;direction:ltr; text-align:center;">
+          © 2024, Designed by Top
+        </div>
+        </footer>
+        
+        <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="assets/main.js"></script>
+
+        <script>
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const closeModal = document.getElementById('closeModal');
+            const galleryImages = document.querySelectorAll('.slider .image-list img');
+    
+            galleryImages.forEach(image => {
+                image.addEventListener('click', () => {
+                    modalImage.src = image.src; // Set clicked image as modal image
+                    modal.style.display = 'flex'; // Show modal
+                });
+            });
+    
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none'; // Hide modal
+            });
+    
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none'; // Hide modal if clicking outside the image
+                }
+            });
+        </script>
+    </body>
+</html>

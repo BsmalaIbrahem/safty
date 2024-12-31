@@ -1,0 +1,264 @@
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    direction:rtl;
+    text-align:right;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:black;
+}
+
+.navbar-light .navbar-nav .nav-link span{
+    letter-spacing:1px;
+}
+
+.navbar-light .navbar-nav .nav-item{
+    margin-left:10px;
+}
+
+header{
+    position: relative;
+    width:100%;
+    height:500px;
+    background-image:linear-gradient(#0000008a, #00000029) ,url("images/45.jpg");
+    background-size:cover;
+    background-position:center; 
+}
+
+header div{
+    width:100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:white;
+    text-align:center;
+}
+header h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+header p{
+    margin-bottom:20px;
+}
+
+#butonMore{
+    background-color:#C8A830;
+    border-color:#C8A830;
+}
+#ourProjects{
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+#ourProjects p{
+    padding-bottom:20px;
+}
+.slider {
+    position: relative;
+    direction:ltr;
+}
+.slider .slide-button{
+    position: absolute;
+    top:50%;
+    height:50px;
+    width:50px;
+    color:#fff;
+    border:none;
+    outline:none;
+    background-color:#C8A830;
+    font-size:2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align:center;
+    transform:translateY(-50%);
+}
+.slider .slide-button:hover{
+    background-color:#444;
+}
+.slider .slide-button#next-slide{
+    left:-20px;
+
+}
+.slider .slide-button#prev-slide{
+    right:-20px;
+}
+
+.slider .image-list{
+    display:grid;
+    gap: 18px;
+    grid-template-columns: repeat(66, 1fr);
+    overflow-x:auto;
+    scrollbar-width:none;
+    margin-bottom:30px;
+}
+
+.slider .image-list::-webkit-scrollbar{
+    display:none;
+}
+
+.slider .image-list img{
+    width:400px;
+    height:400px;
+    object-fit:cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+                0 1px 3px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.slider-scrollbar{
+    height: 24px;
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track{
+    position: relative;
+    height: 2px;
+    width:100%;
+    background-color:#ccc;
+    border-radius:4px;
+}
+
+.slider-scrollbar:hover .scrollbar-track{
+    height:4px;
+}
+
+.slider-scrollbar .scrollbar-thumb{
+    position: absolute;
+    height: 100%;
+    width:50%;
+    background-color:black;
+    border-radius: inherit;
+    cursor:grab;
+}
+.slider-scrollbar .scrollbar-thumb:active{
+    cursor:grabbing;
+    height:8px;
+    top:-2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after{
+    content: "";
+    position:absolute;
+    left:0;
+    right:0;
+    top:-10px;
+    bottom:-10px;
+}
+
+
+#who {
+    border-radius: 10px;
+    display:flex;
+    justify-content:space-around;
+    align-items:end;
+    flex-wrap:wrap;
+    margin-top:50px;
+    margin-bottom:30px;
+
+  }
+
+  #who img {
+    max-width:550px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  #who #img-top{
+    display:none;
+  }
+
+  #who .content {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.8;
+    text-align: justify;
+    width:50%;
+  }
+   #who .content li{
+    font-size:18px;
+    margin-bottom:10px;
+    text-align:justify;
+   }
+
+  @media screen and (max-width: 768px) {
+    .slider .image-list img{
+        width:500px
+    }
+    #who{
+        justify-content:end;
+    }
+    #who #img-top{
+        display:block;
+    }
+    #who #img-left{
+        display:none;
+    }
+    #who .content{
+        width:100%;
+    }
+  }
+
+  #who .content h1 {
+    margin-bottom: 10px;
+    font-weight:50px;
+    color: #444;
+    color:#C8A830;
+  }
+
+
+  #who .content {
+    font-family: 'Arial', 'Tajawal', sans-serif;
+    color: #333333bd;
+    line-height: 2;
+    text-align: justify;
+  
+}
+
+#who .content ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#who .content li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: justify;
+    list-style-type: disc;
+    list-style-position: inside;
+    font-weight:bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
