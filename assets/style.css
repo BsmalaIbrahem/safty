@@ -247,7 +247,7 @@ header p{
     z-index: 1000;
 }
 
-.modal img {
+.modal #modalImage {
     max-width: 90%;
     max-height: 90%;
 }
